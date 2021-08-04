@@ -11,23 +11,24 @@
 
 ## General Information
 
-
+Flashcards is an application that utilizes React and Redux. Users can create their own topics, quizzes for those topics, and flashcards for those quizzes. Flashcards can be flipped over based on the user's click.
 
 ## Features
 
-
+- Utilizes Redux to manage the state and action creators.
+- Utilizes React to manage various components for a fast and easy user interface.
 
 ## Project Status
 
+- The project is materially complete for the tasks and requirements provided by Codecademy.
 
+## Room for Imrpovement
 
-## Room for Improvement
-
-
+- Provide users with an error screen to go back to the web application in the case that the user tries to create quizzes/flashcards without any topics created.
 
 ## Acknowledgment
 
-
+The project was provided by Codecademy as part of their Full Stack Web Development curriculum.
 
 ## Contact
 
