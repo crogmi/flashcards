@@ -15,13 +15,13 @@ export const topicsSlice = createSlice ({
                 quizIds: []
             }
         },
-        // Start tomorrow from task 11 in the assignment
         addQuizId: (state, action) => {
-
+            const {id, topicId} = action.payload;
+            state.topics.find(id => id === topicId).quizIds.push(id);
         }
     }
 });
 
+export const { addTopic, addQuizId } = topicsSlice.actions;
 export const selectTopics = (state) => state.topics.topics;
-export const { addTopic } = topicsSlice.actions;
 export default topicsSlice.reducer;
