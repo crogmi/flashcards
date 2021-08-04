@@ -14,9 +14,13 @@ export const topicsSlice = createSlice ({
                 icon: icon,
                 quizIds: []
             }
+        },
+        // Start tomorrow from task 11 in the assignment
+        addQuizId: (state, action) => {
+
         }
     }
-})
+});
 
 export const selectTopics = (state) => state.topics.topics;
 export const { addTopic } = topicsSlice.actions;
