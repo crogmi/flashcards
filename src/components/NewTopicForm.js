@@ -5,7 +5,7 @@ import { v4 as uuidv4 } from "uuid";
 import ROUTES from "../app/routes";
 import { ALL_ICONS } from "../data/icons";
 
-import { selectTopics } from "../features/topics/topicsSlice";
+import { addTopic } from "../features/topics/topicsSlice";
 
 export default function NewTopicForm() {
   const dispatch = useDispatch();
@@ -21,7 +21,7 @@ export default function NewTopicForm() {
     }
 
     // dispatch your add topic action here
-    dispatch(selectTopics.addTopic(selectTopics, {
+    dispatch(addTopic({
       name: name,
       id: uuidv4(),
       icon: icon
