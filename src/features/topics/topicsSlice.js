@@ -1,6 +1,6 @@
 import { createSlice } from "@reduxjs/toolkit";
 
-export const topicsSlice = createSlice ({
+export const topicsSlice = createSlice({
     name: "topics",
     initialState: {
         topics: {}
@@ -16,8 +16,8 @@ export const topicsSlice = createSlice ({
             }
         },
         addQuizId: (state, action) => {
-            const {id, topicId} = action.payload;
-            state.topics.find(id => id === topicId).quizIds.push(id);
+            const {quizId, topicId} = action.payload;
+            state.topics[topicId].quizIds.push(quizId);
         }
     }
 });
